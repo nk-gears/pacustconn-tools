@@ -69,7 +69,7 @@ We will have the following actions for the CLI
 
 ## Library/Tool Dependencies
 
-# Need to get Nick's Suggestions as well
+### Need to get Nick's Suggestions as well
 
 - paconn - Official custom library
 - commander - NodeJS command line Utility. The next alternate option is using chalk.
