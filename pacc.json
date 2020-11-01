@@ -1,0 +1,26 @@
+{
+    "environments": [
+        {
+            "environment_id": "Default-850c242d-e5b0-4145-ae1b-8a78880d430d",
+            "env_name": "dev"
+        },
+        {
+            "environment_id": "Default-850c242d-e5b0-4145-ae1b-8a78880d430d",
+            "env_name": "qa"
+        }
+    ],
+    "connectors": [
+        {
+            "cc_id": "procore",
+            "folder_name": "connector_1"
+        },
+        {
+            "cc_id": "bluebeam",
+            "folder_name": "connector_2"
+        },
+        {
+            "cc_id": "plangrid",
+            "folder_name": "connector_3"
+        }
+    ]
+}
