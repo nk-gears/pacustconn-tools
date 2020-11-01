@@ -1,16 +1,25 @@
 # Power Automate Custom Connector - Build Tool
 
-All Definitions will be Placed in the pacc.yml file
-- pacc.json
 
+## How this tools works
+
+- The tool will be published as a npm package
+- The user will be simply installs the pacustconn package from NPM as a global cli
+- The CLI exposes few commands to automate the process of creating connectors, adding actions to a connector
+- Connectors are organized under multiple folders. So, we can manage single or multiple connectors in a project
+
+
+All configurations will be placed in the pacc.json
 
 We will have the following actions for the CLI
 
 - pacc init 
 - pacc create
+- pacc build
+- pacc validate
 - pacc pull
 - pacc push
-- pacc validate
+
 
 ## pacc init 
 - Creates a New Custom Connector with the Basic Setup Locally
@@ -38,6 +47,13 @@ We will have the following actions for the CLI
   - method -m GET, POST, PATCH,DELETE
   - action Name -A : This will be used as Operation Id
 
+
+## pacc build 
+- Builds the final the Swagger file using paconn validate
+
+## pacc validate 
+- Validates the Swagger file using paconn validate
+
 ## pacc pull 
 - Creates a New Custom Connector Locally by Importing from the remote PA
 - Supported Options
@@ -51,5 +67,9 @@ We will have the following actions for the CLI
   pacc push connectorName -e dev
 ```  
 
-## pacc validate 
-- Validates the Swagger file using paconn validate
+## Library/Tool Dependencies
+
+# Need to get Nick's Suggestions as well
+
+- paconn - Official custom library
+- commander - NodeJS command line Utility. The next alternate option is using chalk.
